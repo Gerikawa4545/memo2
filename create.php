@@ -34,3 +34,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     mysqli_close($link);
 
 }
+?>
+<html>
+    <header>登録が完了しました</header>
+</html>
