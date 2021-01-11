@@ -1,7 +1,8 @@
 <?php
 
 require_once __DIR__ . '/mysqli.php';
-function createMemo($link, $memo){
+function createMemo($link, $memo)
+{
 
     $sql = <<<EOT
 INSERT INTO memo (
@@ -21,7 +22,33 @@ EOT;
     }
 }
 
-if($_SERVER['REQUEST_METHOD'] === 'POST') {
+function validate($memo)
+{
+    $errors = [];
+
+    //名前が正しく入力されているかチェック
+    if (!strlen($memo['name'])) {
+        $errors['name'] = '名前を入力してください';
+    } elseif (strlen($memo['name']) > 10) {
+        $errors['name'] = '名前は10文字以内で入力してください';
+    }
+
+    if (!strlen($memo['belongs'])) {
+        $errors['belongs'] = '所属を入力してください';
+    } elseif (strlen($memo['belongs']) > 255) {
+        $errors['belongs'] = '所属は255文字以内で入力してください';
+    }
+
+    if (!strlen($memo['feature'])) {
+        $errors['feature'] = '特徴を入力してください';
+    } elseif (strlen($memo['feature']) > 10000) {
+        $errors['feature'] = '特徴は10000文字以内で入力してください';
+    }
+
+    return $errors;
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $memo = [
         'name' => $_POST['name'],
@@ -29,12 +56,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         'feature' => $_POST['feature']
     ];
 
-    $link = dbConnect();
-    createMemo($link, $memo);
-    mysqli_close($link);
+    $errors = validate($memo);
 
+    if (!count($errors)) {
+        $link = dbConnect();
+        createMemo($link, $memo);
+        mysqli_close($link);
+    }
 }
-?>
-<html>
-    <header>登録が完了しました</header>
-</html>
+
+include ''
