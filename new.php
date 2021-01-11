@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>メモログ</h1>
+    <h1>メモ作成</h1>
     <form action="create.php" method="POST">
         <?php if (count($errors)) : ?>
             <ul>
@@ -20,12 +20,12 @@
         <?php endif; ?>
 
         <div>
-            <label for="title">名前</label>
-            <input type="text" name="title" id="title">
+            <label for="name">名前</label>
+            <input type="text" name="name" id="name">
         </div>
         <div>
-            <label for="author">所属</label>
-            <input type="text" name="author" id="author">
+            <label for="belongs">所属</label>
+            <input type="text" name="belongs" id="belongs">
         </div>
         <div>
             <label for="feature">特徴</label>
