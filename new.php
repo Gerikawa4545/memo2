@@ -20,5 +20,7 @@
                 <label for="feature">特徴</label>
                 <textarea type="text" name="feature" id="feature" class="form-control" rows="10"><?php echo $memo['feature'] ?></textarea>
             </div>
+            <div class="mt-4">
             <button type="submit" class="btn btn-primary">登録する</button>
+            </div>
         </form>
