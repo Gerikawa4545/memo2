@@ -65,4 +65,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-include 'new.php';
+include 'done.php';
