@@ -62,7 +62,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $link = dbConnect();
         createMemo($link, $memo);
         mysqli_close($link);
+        header("Location: done.php");
     }
 }
 
-include 'done.php';
+include 'new.php';

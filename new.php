@@ -21,7 +21,7 @@
 
         <div>
             <label for="name">名前</label>
-            <input type="text" name="name" id="name" 　value="<?php echo $memo['name'] ?>">
+            <input type="text" name="name" id="name" value="<?php echo $memo['name'] ?>">
         </div>
         <div>
             <label for="belongs">所属</label>
