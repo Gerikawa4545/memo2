@@ -29,8 +29,8 @@ function validate($memo)
     //名前が正しく入力されているかチェック
     if (!strlen($memo['name'])) {
         $errors['name'] = '名前を入力してください';
-    } elseif (strlen($memo['name']) > 10) {
-        $errors['name'] = '名前は10文字以内で入力してください';
+    } elseif (strlen($memo['name']) > 100) {
+        $errors['name'] = '名前は100文字以内で入力してください';
     }
 
     if (!strlen($memo['belongs'])) {

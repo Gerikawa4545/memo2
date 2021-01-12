@@ -21,15 +21,15 @@
 
         <div>
             <label for="name">名前</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" 　value="<?php echo $memo['name'] ?>">
         </div>
         <div>
             <label for="belongs">所属</label>
-            <input type="text" name="belongs" id="belongs">
+            <input type="text" name="belongs" id="belongs" value="<?php echo $memo['belongs'] ?>">
         </div>
         <div>
             <label for="feature">特徴</label>
-            <textarea type="text" name="feature" id="feature" rows="10"></textarea>
+            <textarea type="text" name="feature" id="feature" rows="10"><?php echo $memo['feature'] ?></textarea>
         </div>
 
         <button type="submit">登録する</button>

@@ -44,7 +44,7 @@ if (isset($_POST['name']) && isset($_POST['belongs']) && isset($_POST['feature']
     $pdo->createData($name, $belongs, $feature);
 }
 
-include 'views/new.php';
+include 'new.php';
 
 /*?>
 <html>
