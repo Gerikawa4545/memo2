@@ -45,29 +45,3 @@ if (isset($_POST['name']) && isset($_POST['belongs']) && isset($_POST['feature']
 }
 
 include 'new.php';
-
-/*?>
-<html>
-
-<head>
-    <meta charset="utf-8" lang="ja">
-</head>
-
-<body>
-    <h1>メモ作成</h1>
-    <form action="create.php" method="POST">
-        <div>
-            <label for="name">名前</label>
-            <input type="text" name="name" id="name">
-        </div>
-        <div>
-            <label for="belongs">所属</label>
-            <input type="text" name="belongs" id="belongs">
-        </div>
-        <div>
-            <label for="feature">特徴</label>
-            <textarea type="text" name="feature" id="feature" rows="10"></textarea>
-        </div>
-        <input type="submit" name="btn_submit" value="登録する">
-        <form>
-</body>

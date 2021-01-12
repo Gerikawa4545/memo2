@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '9b29dac10eedb71fbb6ff947abc7c84997d41f8d',
+    'reference' => '6017cefb00bf5752bc1524e17259111f6e6b2a36',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => '9b29dac10eedb71fbb6ff947abc7c84997d41f8d',
+      'reference' => '6017cefb00bf5752bc1524e17259111f6e6b2a36',
+    ),
+    'scssphp/scssphp' => 
+    array (
+      'pretty_version' => 'v1.4.1',
+      'version' => '1.4.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ba86c963b94ec7ebd6e19d90cdab90d89667dbf7',
     ),
     'twbs/bootstrap' => 
     array (
