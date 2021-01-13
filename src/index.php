@@ -5,7 +5,7 @@ require_once __DIR__ . '/mysqli.php';
 function listMemos($link)
 {
     $memos = [];
-    $sql = 'SELECT name, belongs, feature, FROM memo;';
+    $sql = 'SELECT id, name, belongs, feature, FROM memo;';
     $results = mysqli_query($link, $sql);
 
     while ($memo = mysqli_fetch_assoc($results)) {

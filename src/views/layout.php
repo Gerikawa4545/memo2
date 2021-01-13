@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <header class="navbar shadow-sm p-3 mb-5 bg-white">
+        <h1 class="h2">
+            <a class="text-body text-decoration-none" href="done.php">メモ一覧</a>
+        </h1>
+    </header>
     <div class="container">
         <?php include $content; ?>
     </div>
