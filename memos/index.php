@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/mysqli.php';
+require_once __DIR__ . '/lib/mysqli.php';
 
 function listMemos($link)
 {
@@ -20,6 +20,6 @@ function listMemos($link)
 $link = dbConnect();
 $memos = listMemos($link);
 
-$title = 'メモの一覧';
-$content = __DIR__ . "/views/index.php";
-include __DIR__ . '/views/layout.php';
+//$title = 'メモの一覧';
+//$content = __DIR__ . "/views/index.php";
+include '/views/index.php';
