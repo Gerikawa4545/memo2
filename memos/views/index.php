@@ -1,4 +1,4 @@
-<a href="new2.php">メモを登録する</a>
+<a href="new.php">メモを登録する</a>
     <main>
         <?php foreach ($memos as $memo) : ?>
             <section>

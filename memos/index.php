@@ -21,5 +21,5 @@ $link = dbConnect();
 $memos = listMemos($link);
 
 $title = 'メモの一覧';
-$content = __DIR__ . '/done2.php';
-include __DIR__ . '/layout.php';
+$content = __DIR__ . "/views/index.php";
+include __DIR__ . '/views/layout.php';

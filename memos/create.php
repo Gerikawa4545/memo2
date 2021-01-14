@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__ . '/mysqli.php';
+require_once __DIR__ . '/lib/mysqli.php';
 function createMemo($link, $memo)
 {
 
@@ -62,8 +62,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $link = dbConnect();
         createMemo($link, $memo);
         mysqli_close($link);
-        header("Location: done.php");
+        header("Location: index.php");
     }
 }
 
-include 'new.php';
+$title = 'メモ登録';
+
+$content = __DIR__ . "/views/new.php";
+include __DIR__ . '/views/layout.php';
+
+//include 'views/new.php';
