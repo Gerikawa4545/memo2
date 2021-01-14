@@ -69,4 +69,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 $title = 'メモ作成';
 
 $content = __DIR__ . "/views/new.php";
-include __DIR__ . 'views/new.php';
+include __DIR__ . '/views/layout.php';
